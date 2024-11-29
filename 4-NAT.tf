@@ -1,5 +1,5 @@
 # Build a NAT for Tokyo datacenter.
-
+/*
 resource "aws_eip" "nat" {
   vpc = true
   
@@ -21,3 +21,4 @@ resource "aws_nat_gateway" "nat" {
 
   depends_on = [aws_internet_gateway.igw_TYO]
 }
+*/
