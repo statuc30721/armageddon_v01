@@ -524,7 +524,7 @@ resource "aws_security_group" "ASG01-SG01-HongKong-LB01" {
 resource "aws_security_group" "ASG01-SG02-HongKong-TG80" {
     name = "ASG01-SG02-HongKong-TG80"
     description = "allow traffic to ASG"
-    vpc_id = aws_vpc.VPC-F-HongKong-Test
+    vpc_id = aws_vpc.VPC-F-HongKong-Test.id
     provider = aws.hongkong
 
 
@@ -556,7 +556,7 @@ resource "aws_security_group" "ASG01-SG02-HongKong-TG80" {
 resource "aws_security_group" "ASG01-SG03-HongKong-servers" {
     name = "ASG01-SG03-HongKong-servers"
     description = "Allow SSH and HTTP traffic to production servers"
-    vpc_id = aws_vpc.VPC-F-HongKong-Test
+    vpc_id = aws_vpc.VPC-F-HongKong-Test.id
     provider = aws.hongkong
 
     ingress {
