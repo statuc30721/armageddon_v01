@@ -88,6 +88,6 @@ resource "aws_route_table_association" "private-ap-northeast-1c" {
   route_table_id = aws_route_table.private.id
   provider = aws.tokyo
 }
-
 */
+
 
