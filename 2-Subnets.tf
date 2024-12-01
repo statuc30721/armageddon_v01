@@ -410,7 +410,7 @@ resource "aws_subnet" "public-us-west-1a" {
 resource "aws_subnet" "public-us-west-1b" {
   vpc_id                  = aws_vpc.VPC-G-California-Test.id
   cidr_block              = "10.26.2.0/24"
-  availability_zone       = "us-west-1a"
+  availability_zone       = "us-west-1b"
   map_public_ip_on_launch = true
   provider = aws.california
 

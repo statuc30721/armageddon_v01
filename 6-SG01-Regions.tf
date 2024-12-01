@@ -16,6 +16,12 @@ resource "aws_security_group" "ASG01-SG01-TYO-LB01" {
         protocol = "tcp"
         cidr_blocks = ["0.0.0.0/0"]
     }
+       egress {
+        from_port   = 0
+        to_port     = 0
+        protocol    = "-1"
+        cidr_blocks = ["0.0.0.0/0"]
+  }
 
     tags = {
         Name = "ASG01-SG01-TYO-LB01"
@@ -117,6 +123,12 @@ resource "aws_security_group" "ASG01-SG01-NY-LB01" {
         cidr_blocks = ["0.0.0.0/0"]
     }
 
+   egress {
+        from_port   = 0
+        to_port     = 0
+        protocol    = "-1"
+        cidr_blocks = ["0.0.0.0/0"]
+  }
     tags = {
         Name = "ASG01-SG01-NY-LB01"
         Service = "application1"
@@ -214,7 +226,12 @@ resource "aws_security_group" "ASG01-SG01-LONDON-LB01" {
         protocol = "tcp"
         cidr_blocks = ["0.0.0.0/0"]
     }
-
+   egress {
+        from_port   = 0
+        to_port     = 0
+        protocol    = "-1"
+        cidr_blocks = ["0.0.0.0/0"]
+  }
     tags = {
         Name = "ASG01-SG01-LONDON-LB01"
         Service = "application1"
@@ -312,7 +329,12 @@ resource "aws_security_group" "ASG01-SG01-SAO-LB01" {
         protocol = "tcp"
         cidr_blocks = ["0.0.0.0/0"]
     }
-
+   egress {
+        from_port   = 0
+        to_port     = 0
+        protocol    = "-1"
+        cidr_blocks = ["0.0.0.0/0"]
+  }
     tags = {
         Name = "ASG01-SG01-SAO-LB01"
         Service = "application1"
@@ -411,7 +433,12 @@ resource "aws_security_group" "ASG01-SG01-AUS-LB01" {
         protocol = "tcp"
         cidr_blocks = ["0.0.0.0/0"]
     }
-
+   egress {
+        from_port   = 0
+        to_port     = 0
+        protocol    = "-1"
+        cidr_blocks = ["0.0.0.0/0"]
+  }
     tags = {
         Name = "ASG01-SG01-AUS-LB01"
         Service = "application1"
@@ -510,7 +537,12 @@ resource "aws_security_group" "ASG01-SG01-HongKong-LB01" {
         protocol = "tcp"
         cidr_blocks = ["0.0.0.0/0"]
     }
-
+   egress {
+        from_port   = 0
+        to_port     = 0
+        protocol    = "-1"
+        cidr_blocks = ["0.0.0.0/0"]
+  }
     tags = {
         Name = "ASG01-SG01-HongKong-LB01"
         Service = "application1"
@@ -609,7 +641,12 @@ resource "aws_security_group" "ASG01-SG01-CALI-LB01" {
         protocol = "tcp"
         cidr_blocks = ["0.0.0.0/0"]
     }
-
+   egress {
+        from_port   = 0
+        to_port     = 0
+        protocol    = "-1"
+        cidr_blocks = ["0.0.0.0/0"]
+  }
     tags = {
         Name = "ASG01-SG01-CALI-LB01"
         Service = "application1"
